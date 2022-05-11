@@ -1,22 +1,13 @@
 import React from "react";
-import {
-  AppContainer,
-  CardContainer,
-  ColumnContainer,
-  ColumnTitle,
-} from "./styles";
+import Column from "./Column";
+import { AppContainer } from "./styles";
 
 function App() {
-  return (
-    <AppContainer>
-      <ColumnContainer>
-        <ColumnTitle>Action:</ColumnTitle>
-        <CardContainer>1st Item</CardContainer>
-        <CardContainer>2nd Item</CardContainer>
-        <CardContainer>3rd Item</CardContainer>
-      </ColumnContainer>
-    </AppContainer>
-  );
+    return (
+        <AppContainer>
+            <Column text={"Project 1"} />
+        </AppContainer>
+    );
 }
 
 export default App;
